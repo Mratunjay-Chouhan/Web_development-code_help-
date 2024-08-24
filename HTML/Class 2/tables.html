@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table 1</h1>
+    <table>
+        
+        <tr>
+            <td>January</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>900</td>
+        </tr>
+    </table>
+    <hr>
+    <p>Rowspan and Colspan in tables</p>
+    <p>col: sideways ↔</p>
+    <p>row: top down ↕</p>
+    <p>To style perticular coloumn we use colgroup tag</p>
+    <hr>
+    <h1>Table 2</h1>
+    <table>
+        <colgroup>
+            <col span="1">
+            <col span="1" style="background-color: green;">
+            <col span="1" style="background-color: yellowgreen;">
+            <col span="1" style="background-color: red;">
+        </colgroup>
+        <tr>
+            <td rowspan="2">state of health</td>
+            <td colspan="2">fasting value</td>
+            <td>After eating</td>
+        </tr>
+
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 40</td>
+        </tr>
+        
+        <tr>
+            <td>Pre-diabitic</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>
+    </table>
+    <hr>
+</body>
+</html>
