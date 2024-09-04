@@ -8,13 +8,20 @@
         #form1{
             background-color: aquamarine;
         }
+        #form2{
+            background-color: greenyellow;
+        }
+        label,legend{
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div id="form1">
+        
+    <form>
         <fieldset>
             <legend>Login Page</legend>
-    <form>
         <label for="Email">Enter your Username: </label>
         <input type="text" id="Email" placeholder="Enter email">
         <br><br>
@@ -22,9 +29,9 @@
         <input type="text" id="passkey">
         <br><br>
         <input type="submit" value="submit">
-        
+    </div>    
     </fieldset>
-    </form>
+</form>
     <div id="placeholder">
     <!-- placeholder     -->
     <!-- To create placeholder we can add a faded text -->
@@ -32,7 +39,41 @@
     <input type="image" name="arrow" id="image1" src="/arrow.png" height="20" width="20" alt="submit">
     </div>
     <div id="form2">
-    <p>Form 2</p>
+  <br>
+  <form action="">
+    <fieldset>
+        <legend>Form 2</legend>
+            <label for="Username">Enter your Username: </label>
+            <input type="text" id="Username" placeholder="Enter email address">
+            <br>
+            <br>
+            <label for="password" >Enter your Password: </label>
+            <input type="password" id="password">
+            <br><br>
+            <label for="Language">Select your language</label>
+            <select name="Language" id="language">
+                <option value="Hindi">Hindi</option>
+                <option value="English">Engilsh</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Tamil">Tamil</option>
+            </select>
+            <br><br>
+            <label for="Gender">Enter your gender:</label>
+            <input type="checkbox" id="Gender" name="Gender" value="Male">Male</input>
+            <input type="checkbox" id="Gender" name="Gender" Value="female">female</input>
+            <input type="checkbox" id="Gender" name="gender" value="not specified">not to specify</input>
+            <br><br>
+            <label for="salary range">Salary range:</label>
+            <input type="radio" id="salary" name="salary" value="< 3lpa">less than 3 LPA</radio>
+            <input type="radio" name="salary" id="salary" value=">3lpa">More than 3 LPA</input>
+            <br>
+            <label for="fileselect">Insert your resume: </label>
+            <input type="file" id="fileselect">
+            <br>
+            <input type="image" name="loginbutton" id="loginbutton" src="download (1).png" height="150" width="250" alt="submit" value="submit">
+            
+        </fieldset>
+    </form>
 </div>
 </body>
 </html>
